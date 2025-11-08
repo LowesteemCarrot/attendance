@@ -131,11 +131,3 @@ As a lecturer:
 📜 License
 This project is licensed under the MIT License.
 
-📧 Support
-For any issues or inquiries, feel free to reach out via email: [Francis Njenga](mailto:rajeynj@gmail.com).
-
-### Visit My Website
-
-https://www.frankcodes.tech
-
-You can send donations to my PayPal account: rajeynjenga@gmail.com
