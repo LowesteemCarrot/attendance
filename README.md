@@ -52,7 +52,7 @@ Follow these steps to set up and run the project:
 
 - Clone the repository using Git:
   ```bash
-  git clone https://github.com/francis-njenga/Face-Recognition-Attendance-System.git
+  https://github.com/LowesteemCarrot/Face-Recognition-Attendance-System.git
   ```
   -Download zip file
 
@@ -130,4 +130,5 @@ As a lecturer:
 
 📜 License
 This project is licensed under the MIT License.
+
 
