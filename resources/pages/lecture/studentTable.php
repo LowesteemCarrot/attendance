@@ -7,7 +7,7 @@
                 <th>Registration No</th>
                 <th>Name</th>
                 <th>Course</th>
-                <th>Unit</th>
+                <th>unit</th>
                 <th>Venue</th>
                 <th>Attendance</th>
                 <th>Settings</th>

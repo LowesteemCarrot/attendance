@@ -42,7 +42,7 @@ if (isset($_POST["addUnit"])) {
         $query->execute();
 
         if ($query->rowCount() > 0) {
-            $_SESSION['message'] = "Unit Already Exists";
+            $_SESSION['message'] = "Batch Already Exists"; // TEXT CHANGE 1
         } else {
             $query = $pdo->prepare("INSERT INTO tblunit (name, unitCode, courseID, dateCreated) 
                                      VALUES (:name, :unitCode, :courseID, :dateCreated)");
@@ -52,7 +52,7 @@ if (isset($_POST["addUnit"])) {
             $query->bindParam(':dateCreated', $dateRegistered);
             $query->execute();
 
-            $_SESSION['message'] = "Unit Inserted Successfully";
+            $_SESSION['message'] = "Batch Inserted Successfully"; // TEXT CHANGE 2
         }
     } else {
         $_SESSION['message'] = "Invalid input for unit";
@@ -135,9 +135,7 @@ if (isset($_POST["addFaculty"])) {
 
                         <div class="card--data">
                             <div class="card--content">
-                                <button class="add"><i class="ri-add-line"></i>Add Units</button>
-                                <h1><?php total_rows('tblunit') ?> Units</h1>
-                            </div>
+                                <button class="add"><i class="ri-add-line"></i>Add Batches</button> <h1><?php total_rows('tblunit') ?> Batches</h1> </div>
                             <i class="ri-file-text-line card--icon--lg"></i>
                         </div>
 
@@ -169,8 +167,7 @@ if (isset($_POST["addFaculty"])) {
                             <tr>
                                 <th>Name</th>
                                 <th>Faculty</th>
-                                <th>Total Units</th>
-                                <th>Total Students</th>
+                                <th>Total Batches</th> <th>Total Students</th>
                                 <th>Date Created</th>
                                 <th>Action</th>
                             </tr>
@@ -216,15 +213,13 @@ if (isset($_POST["addFaculty"])) {
             </div>
             <div class="table-container">
                 <div class="title">
-                    <h2 class="section--title">Unit</h2>
-                </div>
+                    <h2 class="section--title">Batch</h2> </div>
                 </a>
                 <div class="table">
                     <table>
                         <thead>
                             <tr>
-                                <th>Unit Code</th>
-                                <th>Name</th>
+                                <th>Batch Code</th> <th>Name</th>
                                 <th>Course</th>
                                 <th>Total Student</th>
                                 <th>Date Created</th>
@@ -357,17 +352,13 @@ if (isset($_POST["addFaculty"])) {
             <form method="POST" action="" name="addUnit" enctype="multipart/form-data">
                 <div style="display:flex; justify-content:space-around;">
                     <div class="form-title">
-                        <p>Add Unit</p>
-                    </div>
+                        <p>Add Batch</p> </div>
                     <div>
                         <span class="close">&times;</span>
                     </div>
                 </div>
 
-                <input type="text" name="unitName" placeholder="Unit Name" required>
-                <input type="text" name="unitCode" placeholder="Unit Code" required>
-
-                <select required name="lecture">
+                <input type="text" name="unitName" placeholder="Batch Name" required> <input type="text" name="unitCode" placeholder="Batch Code" required> <select required name="lecture">
                     <option value="" selected>Assign Lecture</option>
                     <?php
                     $lectureNames = getLectureNames();
@@ -386,8 +377,7 @@ if (isset($_POST["addFaculty"])) {
                     ?>
                 </select>
 
-                <input type="submit" class="submit" value="Save Unit" name="addUnit">
-            </form>
+                <input type="submit" class="submit" value="Save Batch" name="addUnit"> </form>
         </div>
 
         <div class="formDiv" id="addFacultyForm" style="display:none; ">

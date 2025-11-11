@@ -74,9 +74,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 </select>
 
                 <select required name="unit" id="unitSelect" onChange="updateTable()">
-                    <option value="" selected>Select Unit</option>
+                    <option value="" selected>Select unit</option>
                     <?php
-                    $unitNames = getUnitNames();
+                    $unitNames = getunitNames();
                     foreach ($unitNames as $unit) {
                         echo '<option value="' . $unit["unitCode"] . '">' . $unit["name"] . '</option>';
                     }

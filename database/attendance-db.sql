@@ -40,7 +40,7 @@ CREATE TABLE `tbladmin` (
 --
 
 INSERT INTO `tbladmin` (`Id`, `firstName`, `lastName`, `emailAddress`, `password`) VALUES
-(1, 'Admin', '', 'admin@gmail.com', '$2y$10$FIBqWvTOXRMoQOAB2FBz3uUbaCwRYTM1zQreFI6i/7v6Qi8y9R1i6');
+(1, 'Admin', '', 'minhbad@example.com', '$2y$10$mtoiAH8QPwXpEYGe/8SDHOmCKecy4cAXZAOJvwN1csQDuYQrTazou');
 
 -- --------------------------------------------------------
 

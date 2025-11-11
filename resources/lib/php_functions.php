@@ -67,7 +67,7 @@ function getVenueNames()
 
     return $venueNames;
 }
-function getUnitNames()
+function getunitNames()
 {
     $sql = "SELECT unitCode,name FROM tblunit";
     $result = fetch($sql);

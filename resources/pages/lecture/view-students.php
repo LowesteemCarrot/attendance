@@ -61,9 +61,9 @@ if (!empty($unitCode)) {
                 </select>
 
                 <select required name="unit" id="unitSelect" onChange="updateTable()">
-                    <option value="" selected>Select Unit</option>
+                    <option value="" selected>Select unit</option>
                     <?php
-                    $unitNames = getUnitNames();
+                    $unitNames = getunitNames();
                     foreach ($unitNames as $unit) {
                         echo '<option value="' . $unit["unitCode"] . '">' . $unit["name"] . '</option>';
                     }
@@ -128,11 +128,11 @@ if (!empty($unitCode)) {
         var unitSelect = document.getElementById("unitSelect");
 
         var selectedCourse = courseSelect.value;
-        var selectedUnit = unitSelect.value;
+        var selectedunit = unitSelect.value;
 
         var url = "view-students";
-        if (selectedCourse && selectedUnit) {
-            url += "?course=" + encodeURIComponent(selectedCourse) + "&unit=" + encodeURIComponent(selectedUnit);
+        if (selectedCourse && selectedunit) {
+            url += "?course=" + encodeURIComponent(selectedCourse) + "&unit=" + encodeURIComponent(selectedunit);
             window.location.href = url;
             console.log(url)
         }

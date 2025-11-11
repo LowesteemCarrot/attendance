@@ -43,7 +43,7 @@
 
                         <div class="card--data">
                             <div class="card--content">
-                                <h5 class="card--title">Units</h5>
+                                <h5 class="card--title">units</h5>
                                 <h1><?php total_rows("tblunit") ?></h1>
                             </div>
                             <i class="ri-file-text-line card--icon--lg"></i>
@@ -216,7 +216,7 @@
                             <tr>
                                 <th>Name</th>
                                 <th>Faculty</th>
-                                <th>Total Units</th>
+                                <th>Total units</th>
                                 <th>Total Students</th>
                                 <th>Date Created</th>
                                 <th>Action</th>
@@ -263,6 +263,7 @@
     </section>
 
     <?php js_asset(["active_link", "delete_request"]) ?>
+    <script src="resources/assets/javascript/face_logics/script.js"></script>
 
 
 </body>

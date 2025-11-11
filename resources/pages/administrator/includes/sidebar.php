@@ -1,3 +1,4 @@
+<!-- This file handles the sidebars obviously lol -->
 <div class="sidebar">
             <ul class="sidebar--items">
                 <li>
@@ -10,12 +11,6 @@
                     <a href="manage-course">
                         <span class="icon icon-1"><i class="ri-file-text-line"></i></span>
                         <span class="sidebar--item">Manage Courses</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="create-venue">
-                        <span class="icon icon-1"><i class="ri-map-pin-line"></i></span>
-                        <span class="sidebar--item" style="white-space: nowrap;">Create Venue</span>
                     </a>
                 </li>
                 <li>

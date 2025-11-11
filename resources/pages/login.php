@@ -115,14 +115,6 @@ function display_error($error, $is_main = false)
             </p>
             <input type="submit" class="btn" value="Sign In" name="login">
         </form>
-        <p class="or">
-            ----------or--------
-        </p>
-        <div class="icons">
-            <i class="fab fa-google"></i>
-            <i class="fab fa-facebook"></i>
-        </div>
-
     </div>
     <script src="resources/assets/javascript/script.js"></script>
 </body>
